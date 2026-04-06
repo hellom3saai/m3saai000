@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa Pasurat | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Mesa Pasurat (pang) — Full-stack developer specializing in React, TypeScript, and modern web development.">
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass">
+        <nav>
+            <div class="logo">
+                <span class="gradient-text">M3saAI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">หน้าหลัก</a></li>
+                <li><a href="#tech">ทักษะ</a></li>
+                <li><a href="#projects">ผลงาน</a></li>
+                <li><a href="#experience">ประสบการณ์</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary"
+                style="padding: 0.5rem 1.5rem; font-size: 0.85rem;">ติดต่อฉัน</a>
+            <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section container">
+            <div class="reveal">
+                <span class="badge">
+                    <div class="dot"></div> ยินดีต้อนรับสู่พอร์ตโฟลิโอของผม
+                </span>
+                <h1>สวัสดีผม <span class="gradient-text">Mesa Pasurat</span>, <br><span id="typewriter"></span><span
+                        class="typewriter-cursor"></span></h1>
+                <p> </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">ผลงาน<i data-lucide="arrow-right"></i></a>
+                    <a href="#tech" class="btn btn-secondary">ทักษะ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Status / Stats -->
+        <section class="about-section container">
+            <div class="service-status glass reveal">
+                <div class="status-item">
+                    <div class="dot"></div>
+                    <span>Service Status: <strong style="color: #22c55e;">Operational</strong></span>
+                </div>
+                <div class="status-item">
+                    <i data-lucide="github" style="color: var(--primary-sky); width: 1.2rem;"></i>
+                    <span>GitHub Activity: <strong style="color: var(--text-white);">Low</strong></span>
+                </div>
+                <div class="status-item">
+                    <i data-lucide="layers" style="color: var(--primary-sky); width: 1.2rem;"></i>
+                    <span>Projects: <strong style="color: var(--text-white);">2+ Finished</strong></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section id="tech" class="tech-section container">
+            <div class="section-title reveal">
+                <h2>เครื่องมือที่ใช้</h2>
+                <p>The tools and technologies I use to bring ideas to life.</p>
+            </div>
+            <div class="tech-grid reveal">
+                <div class="tech-card glass">
+                    <i data-lucide="terminal"></i>
+                    <span>Pawn</span>
+                </div>
+                <div class="tech-card glass">
+                    <i data-lucide="layout"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="tech-card glass">
+                    <i data-lucide="palette"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="tech-card glass">
+                    <i data-lucide="code-2"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-card glass">
+                    <i data-lucide="image"></i>
+                    <span>Canva</span>
+                </div>
+                <div class="tech-card glass">
+                    <i data-lucide="server"></i>
+                    <span>XAMPP</span>
+                </div>
+                <div class="tech-card glass">
+                    <i data-lucide="bot"></i>
+                    <span>GPT</span>
+                </div>
+                <div class="tech-card glass">
+                    <i data-lucide="bot"></i>
+                    <span>Claude</span>
+                </div>
+                <div class="tech-card glass">
+                    <i data-lucide="code"></i>
+                    <span>VsCode</span>
+                </div>
+                <div class="tech-card glass">
+                    <i data-lucide="code"></i>
+                    <span>Antigravity</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects-section container">
+            <div class="section-title reveal">
+                <h2>Featured Projects</h2>
+                <p>A selection of my best work and open-source contributions.</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass reveal delay-1">
+                    <div class="project-img"
+                        style="display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <img src="https://cdn.discordapp.com/attachments/1391831213655855186/1489964140247122112/image.png?ex=69d254bd&is=69d1033d&hm=1191014b37d150f5ba27625bcd736f43d02eb0d68b55f0ea1e91c34dad93fa34&"
+                            alt="Project Screenshot" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Car & Motorcycle Store</h3>
+                        <div class="tags">
+                            <span class="tag">html</span>
+                            <span class="tag">css</span>
+                            <span class="tag">php</span>
+                            <span class="tag">xampp</span>
+                        </div>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                            ระบบขายรถมอเตอร์ไซค์และรถยนต์แบบเว็บไซต์ สามารถจัดการข้อมูลแบบ Real-time ได้
+                            โดยรองรับการอัปเดตสต็อกรถทันที (เพิ่ม/แก้ไข/ขาย), ระบบจองและชำระเงินออนไลน์, แชทลูกค้าแบบสด,
+                            และแดชบอร์ดสรุปยอดขาย พร้อมระบบแจ้งเตือนอัตโนมัติ
+                            ทำให้ผู้ใช้ทุกคนเห็นข้อมูลตรงกันแบบไม่ต้องรีเฟรชหน้าเว็บ</p>
+                        <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.8rem;">View
+                            Project <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass reveal delay-2">
+                    <div class="project-img"
+                        style="display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <img src="https://cdn.discordapp.com/attachments/1391831213655855186/1489965670211784875/image.png?ex=69d2562a&is=69d104aa&hm=8abd306d3a75fb844b7866cb8ec62dcd36ca7294ce207e295430389537e7540b&
+                            alt=" Project Screenshot" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3>System Shop (SAMP)</h3>
+                        <div class="tags">
+                            <span class="tag">pawn</span>
+                            <span class="tag">canva</span>
+
+                        </div>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">ระบบร้านค้าแบบ UI mod
+                            ทำงานบนเซิฟเวอร์ SAMP</p>
+                        <a href="https://www.facebook.com/share/v/1BZXfFBVKq/" class="btn btn-secondary"
+                            style="padding: 0.5rem 1.25rem; font-size: 0.8rem;">View
+                            Project <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section id="experience" class="experience-section container">
+            <div class="section-title reveal">
+                <h2>Experience</h2>
+                <p>My journey through the world of technology and software development.</p>
+            </div>
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h4>เรียนรู้เพิ่มเติม</h4>
+                        <p>ศึกษาภาษาโปรแกรมใหม่ๆ และลองทำโปรเจกต์ใหม่ๆ</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2022 - 2023</span>
+                        <h4>เริ่มทำงาน</h4>
+                        <p>เริ่มเปิด server SAMP และทำระบบต่างๆ พร้อมรับงาน freelance</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2020 - 2022</span>
+                        <h4>กำลังศึกษา</h4>
+                        <p>กำลังศึกษาเกี่ยวกับระบบ SAMP ภาษา pawn และ UI Design และอื่นๆ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section container">
+            <div class="contact-container glass reveal">
+                <h2>มาสร้างสรรค์สิ่งดีๆ ด้วยกัน! <span class="gradient-text">Bro!!</span></h2>
+                <p>หากคุณมีโปรเจกต์ที่อยากให้ช่วยทำ หรืออยากพูดคุยแลกเปลี่ยนความคิดเห็น สามารถติดต่อมาได้เลยครับ!</p>
+                <a href="https://www.facebook.com/m3sa.ai33/" class="btn btn-primary"
+                    style="padding: 1.2rem 3rem; font-size: 1.1rem;">facebook <i data-lucide="mail"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Designed and Built by <span class="gradient-text">Mesa</span> &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
