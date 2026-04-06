@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 // Aiven MySQL Connection Configuration
 $servername = "mysql-1f831693-hellom3saai-2741.a.aivencloud.com";
 $username = "avnadmin";
