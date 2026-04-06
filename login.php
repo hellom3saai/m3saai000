@@ -43,12 +43,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
 ?>
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เข้าสู่ระบบ | MESA SAMP SHOP</title>
     <style>
-        * { box-sizing: border-box; }
+        * {
+            box-sizing: border-box;
+        }
+
         :root {
             --bg: #FDFBF7;
             --panel: #FFFFFF;
@@ -84,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
             justify-content: center;
             font-family: 'Inter', sans-serif;
             background: radial-gradient(circle at top left, rgba(154, 123, 222, 0.12), transparent 35%),
-                        linear-gradient(to bottom, var(--bg), #FAF7F0) !important;
+                linear-gradient(to bottom, var(--bg), #FAF7F0) !important;
             color: var(--text);
             padding: 24px;
             transition: background 0.3s, color 0.3s;
@@ -120,6 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
             box-shadow: var(--shadow);
             z-index: 1000;
         }
+
         .theme-toggle:hover {
             border-color: var(--accent);
             transform: translateY(-2px);
@@ -186,6 +191,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
             transition: transform 0.2s, box-shadow 0.2s;
             margin-top: 8px;
         }
+
         .btn-submit:hover {
             transform: translateY(-2px);
             box-shadow: 0 12px 32px rgba(154, 123, 222, 0.4);
@@ -224,12 +230,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
         }
 
         @media (max-width: 600px) {
-            body { padding: 16px; }
-            .auth-card { padding: 24px; }
-            .auth-header h1 { font-size: 1.8rem; }
+            body {
+                padding: 16px;
+            }
+
+            .auth-card {
+                padding: 24px;
+            }
+
+            .auth-header h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
+
 <body>
     <button class="theme-toggle" onclick="toggleTheme()" title="สลับโหมด มืด/สว่าง">🌙</button>
 
@@ -270,7 +285,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
             const body = document.body;
             const btn = document.querySelector('.theme-toggle');
             body.classList.toggle('dark-theme');
-            
+
             const isDark = body.classList.contains('dark-theme');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             if (btn) btn.innerHTML = isDark ? '☀️' : '🌙';
@@ -287,4 +302,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
         });
     </script>
 </body>
+
 </html>
